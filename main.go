@@ -7,7 +7,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-  log.Println("hit on %s",  r.URL.Path[1:])
+    log.Println("hit on %s",  r.URL.Path[1:])
     fmt.Fprintf(w, "Welcome to: %s!", r.URL.Path[1:])
 }
 
